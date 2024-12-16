@@ -6,32 +6,36 @@
 
 # Installation/Setup:
 
-1. Clone the repository
+## 1. Clone the repository
+
 ```bash
 git clone https://github.com/connorsloan/book-logger
 ```
 
-2. Navigate to the repository
 
-3. Build project
+## 2. Navigate to the repository
+
+## 3. Build project
 
 ```bash
 mvn clean install
 ```
 
-4. Copy .war file to Tomcat /webapps folder
+
+## 4. Copy .war file to Tomcat /webapps folder
 
 ```bash
 # Change Tomcat version if necessary
 cp target/BookLogger-1.0-SNAPSHOT.war .../apache-tomcat-10.1.31/webapps
 ```
 
-5. Navigate to Tomcat /bin directory
 
-6. Start Tomcat
+## 5. Navigate to Tomcat /bin directory
+
+
+## 6. Start Tomcat
 
 Windows
-
 ```bash
 ./startup.bat
 ```
@@ -40,5 +44,6 @@ Mac
 ```bash
 ./startup.sh
 ```
+
 
 7. Open your browser and go to http://localhost:8080/BookLogger-1.0-SNAPSHOT/index.jsp
