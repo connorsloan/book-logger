@@ -46,4 +46,22 @@ public class Updater {
         }
         return books;
     }
+
+    public void createDB() throws SQLException {
+        String q1 = "CREATE DATABASE IF NOT EXISTS booklog;";
+        String q2 = "USE booklog;";
+        String q3 = "CREATE TABLE IF NOT EXISTS books (\n" +
+                "\tid INT AUTO_INCREMENT PRIMARY KEY,\n" +
+                "    title VARCHAR(100),\n" +
+                "    author VARCHAR(100),\n" +
+                "    notes VARCHAR(500),\n" +
+                "    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n" +
+                ");";
+        try (Connection conn = DBConnection.getConnection();
+             Statement stmt = conn.createStatement()) {
+            stmt.executeUpdate(q1);
+            stmt.executeUpdate(q2);
+            stmt.executeUpdate(q3);
+        }
+    }
 }

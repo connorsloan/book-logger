@@ -1,5 +1,13 @@
 <%@ page import="java.util.*, org.example.booklogger.*" %>
 <%@ page import="java.sql.SQLException" %>
+<%
+  Updater updater = new Updater();
+    try {
+        updater.createDB();
+    } catch (SQLException e) {
+        throw new RuntimeException(e);
+    }
+%>
 <html>
 <head>
   <title>Book Log</title>
@@ -17,7 +25,6 @@
     <th>Date</th>
   </tr>
   <%
-    Updater updater = new Updater();
     List<Book> books;
     try {
         books = updater.getAllBooks();
