@@ -46,4 +46,4 @@ Mac
 ```
 
 
-7. Open your browser and go to http://localhost:8080/BookLogger-1.0-SNAPSHOT/index.jsp
+## 7. Open your browser and go to http://localhost:8080/BookLogger-1.0-SNAPSHOT/index.jsp
