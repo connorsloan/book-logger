@@ -1,0 +1,50 @@
+/* Generated this background pattern from https://www.magicpattern.design/tools/css-backgrounds*/
+html {
+    background-color: #fbffbe;
+    opacity: 0.8;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(0deg, #8185ff, #8185ff 1px, #fbffbe 1px, #fbffbe);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+button {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+table {
+    background: white;
+}
+
+th {
+    width: 200px;
+    text-align: center;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+td.title {
+    max-width: 100px;
+}
+
+td.author {
+    max-width: 100px;
+}
+
+td.notes {
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 300px;
+}
+
+td.timestamp {
+    max-width: 100px;
+}
